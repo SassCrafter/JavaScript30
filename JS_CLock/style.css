@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    min-height: 100vh;
+    background: url(https://unsplash.it/1500/1000?image=881&blur=5) no-repeat center top/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    border: 2rem solid white;
+    box-shadow: 0 0 0 .4rem rgba(0,0,0, .1),
+    inset 0 0 0 .3rem #efefef,
+    inset 0 0 1rem black;
+}
+
+.clock-face {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hand {
+    height: .5rem;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: right center;
+    transform: translate(-100%, -50%) rotate(90deg);
+    transition: transform 250ms cubic-bezier(0, 2.13, 0.58, 1);
+}
+
+.hourHand {
+    width: 8rem;
+}
+.minHand {
+    width: 12rem;
+}
+.secHand {
+    width: 15rem;
+}

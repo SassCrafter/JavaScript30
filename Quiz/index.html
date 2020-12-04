@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    
+    <div class="quiz">
+        <div class="quiz-top">
+            <div class="results">
+                <p class="result ">
+                    <i class="fas fa-check"></i>
+                    <span class="result-num" id='correct'>0</span>
+                    correct
+                </p>
+                <p class="result">
+                    <i class="fas fa-times"></i>
+                    <span class="result-num" id='wrong'>0</span>
+                    wrong
+                </p>
+            </div>
+        </div>
+        <div class="quiz-content">
+            <h2 class="question">Question</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a">
+                    <span>a</span>
+                    <label for="a" class="answer" id='a-choice'>answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b">
+                    <span>b</span>
+                    <label for="b" class="answer" id='b-choice'>answer</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c">
+                    <span>c</span>
+                    <label for="c" class="answer" id='c-choice'>answer</label>
+                </li>
+            </ul>
+            <button type="submit" class="btn" id="submit-btn">send answer</button>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
