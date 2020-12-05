@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+:root {
+	--base: #ffc600;
+	--spacing: 10px;
+	--blur: 0;
+}
+
+body {
+	min-height: 100vh;
+	font-size: 1.6rem;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #193549;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.container {
+	max-width: 1200px;
+	padding: 0 2rem;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.img-wrapper {
+	max-width: 37rem;
+	margin: 2rem auto;
+	padding: var(--spacing);
+	background: var(--base);
+}
+
+img {
+	max-width: 100%;
+	filter: blur(var(--blur));
+}
+
+h1 {
+	font-size: 4rem;
+	margin-bottom: 3rem;
+}
+
+h1 span {
+	text-transform: uppercase;
+	color: var(--base);
+}
+
+.controls {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 4rem;
+}
+
+.controls .group {
+	margin-bottom: 2rem;
+}
+
+.controls label {
+	display: block;
+	font-size: 2rem;
+	text-transform: capitalize;
+	margin-bottom: 1rem;
+}
+
+.controls input {
+	width: 10rem;
+}
+
+.controls input[type=color] {
+	height: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+	h1 {
+		padding-top: 5rem;
+		font-size: 6rem;
+		margin-bottom: 5rem;
+	}
+
+	.controls {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.controls .group {
+		margin-bottom: 0;
+		margin-right: 2rem;
+	}
+
+	.controls label {
+		display: inline-block;
+		margin-bottom: 0;
+		margin-right: 1rem;
+		font-size: 3rem;
+	}
+
+	.controls input[type=color] {
+		width: 10rem;
+		height: 2rem;
+	}
+
+	.img-wrapper {
+		max-width: 60rem;
+	}
+}
