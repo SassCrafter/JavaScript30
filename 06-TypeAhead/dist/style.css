@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100vh;
+	background: #ffc600;
+	color: #333;
+	font-size: 1.6rem;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.4;
+}
+
+.container {
+	width: 95%;
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: 4rem 2rem;
+	text-align: center;
+}
+
+.search-form {
+	width: 100%;
+}
+
+.search-input {
+	display: inline-block;
+	outline: none;
+	width: 100%;
+	padding: 2rem 2rem;
+	background: white;
+	border-radius: .5rem;
+	border: .5rem solid #eee;
+	color: #555;
+	font-size: 3.5rem;
+	text-align: center;
+}
+
+.suggestions {
+	list-style: none;
+}
+
+.suggestions li {
+	width: 90%;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	background: white;
+	border-bottom: 1px solid #D8D8D8;
+  	box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+	font-size: 1.8rem;
+	text-align: left;
+	text-transform: capitalize;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+}
+.suggestions li:nth-child(odd) {
+	transform: perspective(10rem) rotateX(-3deg) translateY(.1rem);
+	background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+}
+
+.suggestions li:nth-child(even) {
+	transform: perspective(10rem) rotateX(3deg) translateY(.1rem) scaleY(1.01);
+	background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
+}
+
+span.population {
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+.sg {
+	font-size: 1.1em;
+	font-weight: bold;
+	background: #ffc600;
+}
